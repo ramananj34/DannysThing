@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .chat-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100dvh;
+    background-color: #fff;
+    border-radius: 0;
+  }
+  
+  .chat-header {
+    padding: 15px;
+    background-color: #0084ff;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .chat-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-messages::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .chat-messages::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+    border-radius: 10px;
+  }
+  
+  .message {
+    margin-bottom: 20px;
+    max-width: 75%;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .message.user {
+    margin-left: auto;
+    flex-direction: row-reverse;
+  }
+  
+  .message-bubble {
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: #f1f0f0;
+  }
+  
+  .message.user .message-bubble {
+    background-color: #0084ff;
+    color: #fff;
+  }
+  
+  .message-time {
+    font-size: 0.75rem;
+    color: #999;
+    margin: 5px;
+  }
+  
+  .chat-input-area {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .chat-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  .chat-send-btn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #0084ff;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .chat-send-btn:hover {
+    background-color: #0073e6;
+  }
+  
+  .message-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .message-name {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .message-time {
+    font-size: 0.75rem;
+    color: #999;
+  }
